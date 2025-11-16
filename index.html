@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apartment Debussy - Beautiful apartment with sea view in Ičići, Croatia">
+    <title>Apartment Debussy - Ičići, Croatia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="hr">HR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Apartment Debussy</h1>
+            <p class="hero-subtitle" data-translate="hero-subtitle">Luksuzni apartman s pogledom na more</p>
+            <p class="hero-location">Ičići, Hrvatska</p>
+            <a href="#gallery" class="cta-button" data-translate="cta-explore">Istražite</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Apartment Debussy</div>
+            <ul class="nav-menu">
+                <li><a href="#about" data-translate="nav-about">O apartmanu</a></li>
+                <li><a href="#gallery" data-translate="nav-gallery">Galerija</a></li>
+                <li><a href="#amenities" data-translate="nav-amenities">Sadržaji</a></li>
+                <li><a href="#location" data-translate="nav-location">Lokacija</a></li>
+                <li><a href="#contact" data-translate="nav-contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="about-title">O apartmanu</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about-desc1">
+                        Objekt Apartment Debussy smješten je u Ičićima u regiji 'Primorsko-goranska županija' te sadrži balkon i pogled na more. Ovaj objekt nalazi se na 6 min hoda od znamenitosti Plaža Ičići te nudi terasu i besplatno privatno parkiralište.
+                    </p>
+                    <p data-translate="about-desc2">
+                        Ovaj apartman s klima-uređajem sadrži odvojenu spavaću sobu (1), potpuno opremljenu kuhinju te kupaonicu (1). Dostupan je TV ravnog ekrana.
+                    </p>
+                    <p data-translate="about-desc3">
+                        Na 15 km od objekta Apartment Debussy nalazi se znamenitost Stadion HNK Rijeka Rujevica, dok se znamenitost Pomorski i povijesni muzej Hrvatskog primorja nalazi na 18 km od objekta.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🌊</div>
+                        <h3 data-translate="highlight-seaview">Pogled na more</h3>
+                        <p data-translate="highlight-seaview-desc">Prekrasan pogled s balkona</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🏖️</div>
+                        <h3 data-translate="highlight-beach">6 min do plaže</h3>
+                        <p data-translate="highlight-beach-desc">Plaža Ičići u blizini</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🅿️</div>
+                        <h3 data-translate="highlight-parking">Besplatno parkiranje</h3>
+                        <p data-translate="highlight-parking-desc">Privatno parkiralište</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">❄️</div>
+                        <h3 data-translate="highlight-ac">Klima-uređaj</h3>
+                        <p data-translate="highlight-ac-desc">U svim prostorijama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="gallery-title">Galerija</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="amenities-title">Sadržaji</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <span class="amenity-icon">🛏️</span>
+                    <span data-translate="amenity-bedroom">1 spavaća soba</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🚿</span>
+                    <span data-translate="amenity-bathroom">1 kupaonica</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🍳</span>
+                    <span data-translate="amenity-kitchen">Potpuno opremljena kuhinja</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">📺</span>
+                    <span data-translate="amenity-tv">TV ravnog ekrana</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">❄️</span>
+                    <span data-translate="amenity-ac2">Klima-uređaj</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🏡</span>
+                    <span data-translate="amenity-balcony">Balkon s pogledom na more</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🌿</span>
+                    <span data-translate="amenity-terrace">Terasa</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🚗</span>
+                    <span data-translate="amenity-parking2">Besplatno privatno parkiralište</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">📶</span>
+                    <span data-translate="amenity-wifi">WiFi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="location-title">Lokacija</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3 data-translate="location-address-title">Adresa</h3>
+                    <p class="address">
+                        Ulica 43. istarske divizije 10<br>
+                        51410 Ičići<br>
+                        Hrvatska
+                    </p>
+                    <div class="nearby-attractions">
+                        <h3 data-translate="location-nearby">U blizini</h3>
+                        <ul>
+                            <li>
+                                <strong data-translate="location-beach-name">Plaža Ičići</strong>
+                                <span data-translate="location-beach-distance">6 min hoda</span>
+                            </li>
+                            <li>
+                                <strong data-translate="location-stadium-name">Stadion HNK Rijeka Rujevica</strong>
+                                <span>15 km</span>
+                            </li>
+                            <li>
+                                <strong data-translate="location-museum-name">Pomorski i povijesni muzej Hrvatskog primorja</strong>
+                                <span>18 km</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.9!2d14.3!3d45.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b!2sUlica%2043.%20istarske%20divizije%2010%2C%2051410%2C%20I%C4%8Di%C4%87i!5e0!3m2!1sen!2shr!4v1234567890"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="contact-title">Kontakt & Rezervacija</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact-subtitle">Kontaktirajte nas</h3>
+                    <p data-translate="contact-text">Za više informacija i rezervacije, molimo kontaktirajte nas.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:info@apartmentdebussy.com">info@apartmentdebussy.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <a href="tel:+385">+385 XX XXX XXXX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Apartment Debussy</h3>
+                    <p>Ičići, Hrvatska</p>
+                </div>
+                <div class="footer-section">
+                    <p>&copy; 2024 Apartment Debussy. <span data-translate="footer-rights">Sva prava pridržana.</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
